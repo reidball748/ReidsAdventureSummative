@@ -529,7 +529,7 @@ namespace ReidsAdventureSummative
                     blueImage.Visible = true;
                     blueLabel.Visible = true;
                     blueLabel.Text = "Exit.";
-                    outputPictureBox.Image = Properties.Resources.scene_0_image;
+                    outputPictureBox.Image = Properties.Resources.scene_0_image; //commiting test
                     break;
                 case 20:
                     outputLabel.Text = "You wait for days after the date hoping for a message from her"
