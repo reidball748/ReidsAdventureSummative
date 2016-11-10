@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69F6D26E-888C-443C-AA91-39A94E1445C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReidsAdventureSummative</RootNamespace>
+    <AssemblyName>ReidsAdventureSummative</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_50x501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_50x501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_50x501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene 0 image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park losing jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winning end game jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\angry carnival jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry park jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blushing carnival jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blushing park jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival losing jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival neutral jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame park jessica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad carnival marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad park marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame lose park marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame win carnival marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy carnival marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy park marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose carnival marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose park marie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win aprk zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win carnival zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry carnival zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry park zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blush carnival zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blush park zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival loss zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\carnival zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park loss zoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene 0 image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry carnival jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry park jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blushing carnival jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blushing park jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival losing jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival neutral jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame park jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park losing jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winning end game jessica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame lose park marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endgame win carnival marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy carnival marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy park marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose carnival marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose park marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad carnival marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad park marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park marie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry carnival zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry park zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blush carnival zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blush park zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival loss zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnival zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park loss zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win aprk zoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win carnival zoe1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
